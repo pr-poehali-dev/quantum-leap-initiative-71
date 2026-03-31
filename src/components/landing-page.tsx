@@ -7,11 +7,17 @@ import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ArrowRight, Bell, Sparkles, Zap, Shield, Star } from "lucide-react"
+import Icon from "@/components/ui/icon"
 import { ContestantForm } from "./contestant-form"
+import { VotingPage } from "./voting-page"
+
+const VOTE_START = new Date("2026-04-20T00:00:00+08:00")
 
 export function LandingPage() {
   const { theme } = useTheme()
   const themeConfig = themes[theme]
+
+  const [activeTab, setActiveTab] = useState<"main" | "voting">("main")
 
   const [targetDate, setTargetDate] = useState<Date>(() => {
     const date = new Date()
@@ -183,8 +189,52 @@ export function LandingPage() {
         </div>
       </header>
 
+      {/* Tabs */}
+      <div className={cn("relative z-40 w-full border-b", themeConfig.border)}>
+        <div className="max-w-4xl mx-auto px-4 flex gap-1 sm:gap-2">
+          {[
+            { key: "main", label: "Главная", icon: "Home" },
+            { key: "voting", label: new Date() >= VOTE_START ? "Голосование" : "Участницы", icon: new Date() >= VOTE_START ? "Heart" : "Users" },
+          ].map((tab) => (
+            <button
+              key={tab.key}
+              onClick={() => setActiveTab(tab.key as "main" | "voting")}
+              className={cn(
+                "flex items-center gap-1.5 px-4 py-3 text-sm font-medium border-b-2 transition-all -mb-px",
+                themeConfig.fontClass,
+                activeTab === tab.key
+                  ? cn(
+                      "border-current",
+                      theme === "neon" ? "text-cyan-400 border-cyan-400" :
+                      theme === "luxury" ? "text-amber-300 border-amber-300" :
+                      theme === "glass" ? "text-indigo-600 border-indigo-600" :
+                      theme === "retro" ? "text-amber-800 border-amber-800" :
+                      theme === "terminal" ? "text-green-400 border-green-400" :
+                      theme === "dark" ? "text-zinc-100 border-zinc-100" :
+                      "text-gray-900 border-gray-900"
+                    )
+                  : cn("border-transparent", themeConfig.mutedForeground, "hover:opacity-80"),
+              )}
+            >
+              <Icon name={tab.icon as "Home" | "Heart" | "Users"} size={15} />
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Main Content */}
       <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 py-8 sm:py-12 relative z-10">
+
+        {/* Voting Tab */}
+        {activeTab === "voting" && (
+          <div className="max-w-5xl w-full">
+            <VotingPage />
+          </div>
+        )}
+
+        {/* Main Tab */}
+        {activeTab === "main" && (
         <div className="max-w-4xl w-full flex flex-col items-center gap-6 sm:gap-10">
           {/* Badge */}
           <div
@@ -519,6 +569,7 @@ export function LandingPage() {
             </div>
           </div>
         </div>
+        )}
       </main>
 
       {/* Footer */}
