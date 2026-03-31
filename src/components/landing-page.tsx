@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ArrowRight, Bell, Sparkles, Zap, Shield, Star } from "lucide-react"
+import { ContestantForm } from "./contestant-form"
 
 export function LandingPage() {
   const { theme } = useTheme()
@@ -431,6 +432,36 @@ export function LandingPage() {
                 <span>{feature.text}</span>
               </div>
             ))}
+          </div>
+
+          {/* Contestant Application Form */}
+          <div
+            className={cn(
+              "w-full mt-4 sm:mt-6 p-6 sm:p-8 rounded-2xl border",
+              themeConfig.card,
+              themeConfig.border,
+              theme === "glass" && "backdrop-blur-xl bg-white/40",
+              theme === "neon" && "shadow-[0_0_30px_rgba(34,211,238,0.1)]",
+              theme === "luxury" && "shadow-[0_0_30px_rgba(251,191,36,0.08)]",
+            )}
+          >
+            <div className="text-center mb-6">
+              <h2
+                className={cn(
+                  "text-xl sm:text-2xl font-bold mb-2",
+                  themeConfig.foreground,
+                  themeConfig.fontClass,
+                )}
+              >
+                {theme === "terminal" ? "$ submit_application()" : "Подать заявку на участие"}
+              </h2>
+              <p className={cn("text-sm", themeConfig.mutedForeground, themeConfig.fontClass)}>
+                {theme === "terminal"
+                  ? "// заполните анкету и загрузите фотографии"
+                  : "Заполните анкету и загрузите до 3 фотографий"}
+              </p>
+            </div>
+            <ContestantForm />
           </div>
 
           {/* Social Proof */}
