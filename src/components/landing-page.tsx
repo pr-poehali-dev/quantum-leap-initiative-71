@@ -48,101 +48,101 @@ export function LandingPage() {
     }
   > = {
     "minimal-light": {
-      badge: "Скоро запуск",
-      title: "Будущее",
-      highlight: "продуктивности",
+      badge: "Голосование открывается скоро",
+      title: "МИСС И МИССИС",
+      highlight: "интернет Забайкальский край",
       subtitle:
-        "Мы создаем то, что изменит ваш подход к работе. Просто, мощно и современно.",
-      cta: "Получить ранний доступ",
+        "Поддержи самых ярких и красивых участниц конкурса! Голосование начнётся совсем скоро — не пропусти.",
+      cta: "Уведомить о старте голосования",
       features: [
-        { icon: Sparkles, text: "На базе ИИ" },
-        { icon: Zap, text: "Молниеносно" },
-        { icon: Shield, text: "Приватность" },
+        { icon: Sparkles, text: "Честное голосование" },
+        { icon: Star, text: "Открытый конкурс" },
+        { icon: Shield, text: "Забайкальский край" },
       ],
     },
     dark: {
       badge: "Скоро старт",
-      title: "Новый уровень",
-      highlight: "эволюции",
-      subtitle: "Новый стандарт цифрового опыта. Создано для тех, кто требует лучшего.",
-      cta: "Встать в очередь",
+      title: "МИСС И МИССИС",
+      highlight: "интернет Забайкальский край",
+      subtitle: "Голосуй за свою любимицу и помоги ей завоевать корону! Регистрируйся, чтобы не пропустить старт.",
+      cta: "Зарегистрироваться на голосование",
       features: [
-        { icon: Sparkles, text: "Новое поколение" },
-        { icon: Zap, text: "Сверхскорость" },
-        { icon: Shield, text: "Для бизнеса" },
+        { icon: Sparkles, text: "Честное голосование" },
+        { icon: Star, text: "Открытый конкурс" },
+        { icon: Shield, text: "Забайкальский край" },
       ],
     },
     retro: {
-      badge: "Отправление скоро",
-      title: "Ваше путешествие",
-      highlight: "начинается здесь",
-      subtitle: "Шагните в мир, где классика встречает инновации. Вечный дизайн, современный функционал.",
-      cta: "Забронировать место",
+      badge: "Конкурс красоты",
+      title: "МИСС И МИССИС",
+      highlight: "интернет Забайкальский край",
+      subtitle: "Традиции красоты и грации встречают современный формат. Поддержи свою участницу — голосование скоро!",
+      cta: "Получить уведомление",
       features: [
-        { icon: Sparkles, text: "Вечный дизайн" },
-        { icon: Zap, text: "Мгновенный доступ" },
-        { icon: Shield, text: "Надежность" },
+        { icon: Sparkles, text: "Красота и грация" },
+        { icon: Star, text: "Открытый конкурс" },
+        { icon: Shield, text: "Забайкальский край" },
       ],
     },
     neon: {
-      badge: "[ ИНИЦИАЛИЗАЦИЯ ]",
-      title: "СИСТЕМНЫЙ",
-      highlight: "ПРОРЫВ",
-      subtitle: "Протокол интерфейса нового поколения. Ломаем барьеры. Переопределяем границы.",
-      cta: "НАЧАТЬ ДОСТУП",
+      badge: "[ ГОЛОСОВАНИЕ СКОРО ]",
+      title: "МИСС И МИССИС",
+      highlight: "ЗАБАЙКАЛЬСКИЙ КРАЙ",
+      subtitle: "Интернет-конкурс красоты нового формата. Голосуй за лучшую. Определи победительницу.",
+      cta: "ПОЛУЧИТЬ УВЕДОМЛЕНИЕ",
       features: [
-        { icon: Sparkles, text: "КВАНТОВОЕ ЯДРО" },
-        { icon: Zap, text: "ГИПЕРСКОРОСТЬ" },
-        { icon: Shield, text: "ШИФРОВАНИЕ" },
+        { icon: Sparkles, text: "ЧЕСТНО" },
+        { icon: Star, text: "ОТКРЫТО" },
+        { icon: Shield, text: "ЗАБАЙКАЛЬЕ" },
       ],
     },
     monochrome: {
-      badge: "Анонс",
-      title: "Изысканная",
-      highlight: "простота",
-      subtitle: "Где форма встречает функцию. Создано с умыслом, спроектировано для эффекта.",
-      cta: "Получить уведомление",
+      badge: "Анонс конкурса",
+      title: "МИСС И МИССИС",
+      highlight: "интернет Забайкальский край",
+      subtitle: "Элегантность. Красота. Характер. Поддержи достойную участницу в конкурсе красоты.",
+      cta: "Получить уведомление о старте",
       features: [
-        { icon: Sparkles, text: "Продуманно" },
-        { icon: Zap, text: "Эффективно" },
-        { icon: Shield, text: "Надежно" },
+        { icon: Sparkles, text: "Красота" },
+        { icon: Star, text: "Грация" },
+        { icon: Shield, text: "Забайкальский край" },
       ],
     },
     glass: {
-      badge: "Превью",
-      title: "За пределами",
-      highlight: "границ",
-      subtitle: "Плавный опыт, который адаптируется под вас. Бесшовно, красиво, интуитивно.",
-      cta: "Запросить доступ",
+      badge: "Конкурс красоты",
+      title: "МИСС И МИССИС",
+      highlight: "интернет Забайкальский край",
+      subtitle: "Открытое интернет-голосование за самых красивых и ярких участниц Забайкальского края.",
+      cta: "Уведомить о старте",
       features: [
-        { icon: Sparkles, text: "Адаптивно" },
-        { icon: Zap, text: "Бесшовно" },
-        { icon: Shield, text: "Безопасно" },
+        { icon: Sparkles, text: "Красота" },
+        { icon: Star, text: "Открытое голосование" },
+        { icon: Shield, text: "Забайкальский край" },
       ],
     },
     terminal: {
-      badge: "> status: pending",
-      title: "$ sudo launch",
-      highlight: "--force",
-      subtitle: "// требуется root доступ. ожидание подтверждения развертывания...",
-      cta: "$ subscribe --notify",
+      badge: "> статус: ожидание_старта",
+      title: "МИСС И МИССИС",
+      highlight: "интернет Забайкальский край",
+      subtitle: "// конкурс красоты. интернет-голосование. открытый формат. скоро...",
+      cta: "$ подписаться --уведомление",
       features: [
-        { icon: Sparkles, text: "--optimized" },
-        { icon: Zap, text: "--async" },
-        { icon: Shield, text: "--secure" },
+        { icon: Sparkles, text: "--красота" },
+        { icon: Star, text: "--голосование" },
+        { icon: Shield, text: "--забайкалье" },
       ],
     },
     luxury: {
-      badge: "Эксклюзивный превью",
-      title: "Открываем",
-      highlight: "совершенство",
+      badge: "Эксклюзивный конкурс красоты",
+      title: "МИСС И МИССИС",
+      highlight: "интернет Забайкальский край",
       subtitle:
-        "Для избранных ценителей. Опыт, созданный для тех, кто не соглашается на меньшее.",
-      cta: "Запросить приглашение",
+        "Изысканность, красота и неповторимый характер. Голосуй за участницу, достойную короны.",
+      cta: "Получить приглашение",
       features: [
-        { icon: Sparkles, text: "Уникально" },
-        { icon: Zap, text: "Премиум" },
-        { icon: Shield, text: "Эксклюзив" },
+        { icon: Sparkles, text: "Элегантность" },
+        { icon: Star, text: "Корона" },
+        { icon: Shield, text: "Забайкальский край" },
       ],
     },
   }
@@ -246,7 +246,7 @@ export function LandingPage() {
                 themeConfig.fontClass,
               )}
             >
-              {theme === "terminal" ? "// time_remaining:" : "До запуска"}
+              {theme === "terminal" ? "// время_до_голосования:" : "До старта голосования"}
             </p>
             <ThemedCountdown targetDate={targetDate} />
             <button
@@ -383,7 +383,7 @@ export function LandingPage() {
           >
             <Input
               type="email"
-              placeholder={theme === "terminal" ? "your@email.sh" : "Введите email"}
+              placeholder={theme === "terminal" ? "your@email.sh" : "Ваш email для уведомления"}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={cn(
@@ -483,7 +483,7 @@ export function LandingPage() {
                 ))}
               </div>
               <span className="text-[10px] sm:text-xs">
-                {theme === "terminal" ? "// 2847 users_waiting" : "Уже 2 847+ в очереди"}
+                {theme === "terminal" ? "// 1248 участников_ждут" : "Уже 1 248+ ждут голосования"}
               </span>
             </div>
           </div>
@@ -501,8 +501,8 @@ export function LandingPage() {
       >
         <p className="text-xs sm:text-sm">
           {theme === "terminal"
-            ? "© 2025 // launchpad_inc | privacy --policy | terms --conditions"
-            : "© 2025 LaunchPad Inc. · Политика конфиденциальности · Условия"}
+            ? "© 2026 // miss_mrs_internet_zabaykalsky_kray | конкурс --красоты"
+            : "© 2026 МИСС И МИССИС интернет Забайкальский край · Конкурс красоты"}
         </p>
       </footer>
     </div>
